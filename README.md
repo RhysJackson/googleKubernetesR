@@ -45,8 +45,8 @@ clusterSpec <- list(
 
 # Create the cluster
 createCluster(projectId = "myProject",
-			  zone = "europe-west1-d",
-			  clusterSpec = clusterSpec)
+	zone = "europe-west1-d",
+	clusterSpec = clusterSpec)
 ```
 
 ### List Clusters
