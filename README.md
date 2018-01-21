@@ -1,6 +1,6 @@
 # googleKubernetesR
 
-An R package for the Google Kubernetes Engine API
+An R package for the Google Kubernetes Engine API. Note: This package is in a very early stage of development and not recommended for use in production.
 
 ## Thanks
 A big thank you to Mark Edmondson for the [`googleAuthR`](http://code.markedmondson.me/googleAuthR/) package which is used extensively in this project.
@@ -17,15 +17,17 @@ A big thank you to Mark Edmondson for the [`googleAuthR`](http://code.markedmond
 ## Installation
 ```r
 devtools::install_github("RhysJackson/googleKubernetesR")
+library(googleKubernetesR)
 ```
 
 ## Authentication
 ```r
-# If making many API calls, create a new OAuth client credentials from the Google Cloud console and provide them here as options to googleAuthR
+# If making many API calls, create your own OAuth client credentials from the Google Cloud console and provide them here as options to googleAuthR
 options(googleAuthR.client_id = "YOUR-CLIENT-ID",
         googleAuthR.client_secret = "YOUR-CLIENT-SECRET")
 
-gar_auth()
+# Authenticate
+k8s_auth()
 ```
 
 ## Examples
