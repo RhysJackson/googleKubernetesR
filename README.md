@@ -19,6 +19,15 @@ A big thank you to Mark Edmondson for the [`googleAuthR`](http://code.markedmond
 devtools::install_github("RhysJackson/googleKubernetesR")
 ```
 
+## Authentication
+```r
+# If making many API calls, create a new OAuth client credentials from the Google Cloud console and provide them here as options to googleAuthR
+options(googleAuthR.client_id = "YOUR-CLIENT-ID",
+        googleAuthR.client_secret = "YOUR-CLIENT-SECRET")
+
+gar_auth()
+```
+
 ## Examples
 
 ### Create a cluster

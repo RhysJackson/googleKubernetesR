@@ -17,4 +17,4 @@ Lists all clusters owned by a project in either the specified zone or all zones.
 \examples{
 listClusters(projectId = "myProjectId", location = "europe-west1-d")
 }
-\keyword{projects.locations.clusters.get}
+\keyword{projects.zones.clusters.list}
