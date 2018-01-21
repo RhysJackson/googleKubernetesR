@@ -34,7 +34,7 @@ k8s_auth()
 
 ### Create a cluster
 ```r
-# Create a 3 node, n1-standard-1, 100Gb disk, cluster with the name 'r-cluster'
+# Create a 3 node, n1-standard-1, 100Gb disk, cluster with the default name 'r-cluster'
 # Cluster comes configured with recommended scopes https://www.googleapis.com/auth/compute and https://www.googleapis.com/auth/devstorage.read_only
 createCluster(projectId = "myProject", "europe-west1-d")
 ```

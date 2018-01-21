@@ -4,12 +4,16 @@
 \alias{k8s_auth}
 \title{k8s_auth}
 \usage{
-k8s_auth()
+k8s_auth(json = NULL)
+}
+\arguments{
+\item{json}{Path to your json client_secret credentials.}
 }
 \description{
 Calls googleAuthR to authenticate with the Google Cloud Platform
 }
 \examples{
 k8s_auth()
+k8s_auth(json = "client_secret.json")
 }
 \keyword{k8s_auth}
