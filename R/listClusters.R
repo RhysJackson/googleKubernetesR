@@ -3,7 +3,7 @@
 #' Lists all clusters owned by a project in either the specified zone or all zones.
 #' @param projectId The Google Developers Console project ID or project number.
 #' @param zone The name of the Google Compute Engine zone in which the cluster resides, or "-" for all zones. Defaults to all zones.
-#' @keywords projects.locations.clusters.get
+#' @keywords projects.zones.clusters.list
 #' @importFrom googleAuthR gar_api_generator
 #' @export
 #' @examples
