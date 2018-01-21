@@ -21,6 +21,14 @@ library(googleKubernetesR)
 ```
 
 ## Authentication
+
+### Authenticate with JSON file
+```r
+# Create and download your OAuth 2.0 credentials from the Google Cloud Platform
+k8s_auth(json = "client_secret.json")
+```
+
+### Authenticate with client ID and client secret
 ```r
 # If making many API calls, create your own OAuth client credentials from the Google Cloud console and provide them here as options to googleAuthR
 options(googleAuthR.client_id = "YOUR-CLIENT-ID",

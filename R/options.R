@@ -2,8 +2,8 @@
 
   options(
     googleAuthR.scopes.selected = c("https://www.googleapis.com/auth/cloud-platform"),
-    googleAuthR.client_id = "183315784647-8u0k3nl53tgeq34vnebi7gk6pd7hqj3o.apps.googleusercontent.com",
-    googleAuthR.client_secret = "LZN22bmtW8Y6cfjk-pGUwz9w"
+    googleAuthR.client_id = "586081861104-8or7hjrgmnud04of91ifd00mk1kv70ba.apps.googleusercontent.com",
+    googleAuthR.client_secret = "u4CQfxDyEPwncBDRIR4M0iDV"
   )
 
   invisible()
