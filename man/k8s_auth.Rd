@@ -4,10 +4,12 @@
 \alias{k8s_auth}
 \title{k8s_auth}
 \usage{
-k8s_auth(json = NULL)
+k8s_auth(json = NULL, service_account_json = NULL)
 }
 \arguments{
-\item{json}{Path to your json client_secret credentials.}
+\item{json}{OPTIONAL Path to your JSON client_secret credentials.}
+
+\item{service_account_json}{OPTIONAL Path to your JSON service account credentials}
 }
 \description{
 Calls googleAuthR to authenticate with the Google Cloud Platform
@@ -15,5 +17,6 @@ Calls googleAuthR to authenticate with the Google Cloud Platform
 \examples{
 k8s_auth()
 k8s_auth(json = "client_secret.json")
+k8s_auth(service_account_json = "service_account.json")
 }
 \keyword{k8s_auth}

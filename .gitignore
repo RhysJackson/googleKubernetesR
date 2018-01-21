@@ -3,4 +3,5 @@
 .RData
 test.R
 .httr-oauth
-secret.json
+service_account\.json
+client_secret\.json
