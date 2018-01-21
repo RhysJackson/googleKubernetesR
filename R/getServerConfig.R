@@ -4,6 +4,7 @@
 #' @param projectId The Google Developers Console project ID or project number.
 #' @param zone The name of the Google Compute Engine zone in which the cluster resides.
 #' @keywords projects.locations.getServerConfig
+#' @importFrom googleAuthR gar_api_generator
 #' @export
 #' @examples
 #' getServerConfig(projectId = "myProjectId", zone = "europe-west1-d")

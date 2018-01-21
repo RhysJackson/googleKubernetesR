@@ -17,6 +17,15 @@ setAddons(projectId, zone, clusterId, addonsConfig)
 Sets the addons of a specific cluster.
 }
 \examples{
-setAddons(projectId = "myProjectId", location = "europe-west1-d", clusterId = "cluster-1", addonsConfig = list(httpLoadBalancing = list(disabled = FALSE)))
+setAddons(
+  projectId = "myProjectId",
+  location = "europe-west1-d",
+  clusterId = "cluster-1",
+  addonsConfig = list(
+    httpLoadBalancing = list(
+      disabled = FALSE
+    )
+  )
+)
 }
 \keyword{projects.zones.clusters.addons}

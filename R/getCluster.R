@@ -5,6 +5,7 @@
 #' @param zone The name of the Google Compute Engine zone in which the cluster resides.
 #' @param clusterId The name of the cluster to retrieve.
 #' @keywords projects.locations.clusters.get
+#' @importFrom googleAuthR gar_api_generator
 #' @export
 #' @examples
 #' getCluster(projectId = "myProjectId", zone = "europe-west1-d", clusterId = "cluster-1")
