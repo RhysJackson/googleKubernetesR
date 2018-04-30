@@ -8,11 +8,14 @@
 #' @param zone The name of the Google Compute Engine zone in which the cluster resides.
 #' @param clusterSpec A cluster specification. If no specification is provided, a 3 node, 100Gb disk, n1-standard-1 cluster will be created with the name "r-cluster". See here for specification: https://cloud.google.com/kubernetes-engine/docs/reference/rest/v1beta1/projects.zones.clusters
 #' @keywords projects.zones.clusters.create
+
+#' @examples
+#'
+#' \dontrun{
+#'   createCluster(projectId = "myProjectId", zone = "europe-west1-d")
+#' }
 #' @importFrom googleAuthR gar_api_generator
 #' @export
-#' @examples
-#' createCluster(projectId = "myProjectId", zone = "europe-west1-d")
-
 createCluster <- function(projectId, zone, clusterSpec = NULL) {
 
   if(is.null(clusterSpec)) {
@@ -34,7 +37,8 @@ createCluster <- function(projectId, zone, clusterSpec = NULL) {
 
   f <- gar_api_generator("https://container.googleapis.com/v1beta1",
                          "POST",
-                         path_args = list(projects = projectId, zones = zone, clusters = ""))
+                         path_args = list(projects = projectId, zones = zone, clusters = ""),
+                         data_parse_function = function(x) x)
 
   f(the_body = body)
 
