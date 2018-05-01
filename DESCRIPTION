@@ -3,7 +3,7 @@ Title: R interface to Google Cloud Kubernetes Engine
 Version: 0.0.0.9000
 Authors@R: person("Rhys", "Jackson", email = "rhys.jackson@rocketmill.co.uk", role = c("aut", "cre"))
 Description: The Google Kubernetes Engine API is used for building and managing container based applications, powered by the open source Kubernetes technology.
-Depends: R (>= 3.4.2)
+Depends: R (>= 3.3.0)
 Imports:
 	googleAuthR
 License: Year: 2017 Copyright Holder: Rhys Jackson
